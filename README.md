@@ -46,6 +46,9 @@ The results from the created Moore Machine exactly matched those from the exampl
 Is reset synchronous or asynchronous? 
 It is synchronous because the logic involving the reset only occurs on the rising edge of a clock, thus ensuring that it is in sync with the clock.  
 
+#**Important Notes**
+When designing the logic for this computer exercise, extra caution was used to ensure that no cases were left unspecified.  This way no decisions were left up to the computer/complier, which might decide to create latches or memory where there should not be any, which would create problems in the implementation and the future of the program.  
+
 
 
 
