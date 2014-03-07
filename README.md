@@ -74,7 +74,7 @@ then a 20ns clock period would be required.
 Period and frequency are inversly proportional.  
 
 #**Important Notes**
-When designing the logic for this computer exercise, extra caution was used to ensure that no cases were left unspecified.  This way no decisions were left up to the computer/complier, which might decide to create latches or memory where there should not be any, which would create problems in the implementation and the future of the program.  
+When designing the logic for this computer exercise, extra caution was used to ensure that no cases were left unspecified.  This way no decisions were left up to the computer/complier, which might decide to create latches or memory where there should not be any, which would create problems in the implementation and the future use of the program.  
 For some reason most of the self-checking testbenches were not returning true.  I did notice, however, that the tests seemed to be reading the value from slightly prior to where whey were supposed to be checking.  I did check all of the results manually, however, and they seemed accurate.  
 
 
