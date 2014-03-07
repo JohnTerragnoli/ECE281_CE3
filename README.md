@@ -22,7 +22,9 @@ The information from this diagram was used to code the behavior of the elevator 
 
 
 The code that defines the behavior of the elevator through the Moore model can be seen here: 
+https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/MooreElevatorController_Shell.vhd   
 
+Some important changes were made to the code aside from adding the behavior of the elevator on the third and fourth floors.  Insead of using an "and" statemnent in the logic to determin if the clock is a a rising edge, the code was simply changed to "RISING_EDGE(CLK)".  This wording is more precise and will prevent future confusion when other users try to add to this code. 
 
 
 
