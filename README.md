@@ -36,7 +36,7 @@ This testbench was then implimented.  The results can be seen in the picture bel
 The results were compared with the sample results give in the lab.  These sample results can be seen here: 
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/ExampleScreenShot.PNG "Sample Results")
 
-The results from the created Moore Machine exactly matched those from the example.  Also, none of the self-checking assertions in the testbench raised alarm.  The Moore Machine must have been built right.  
+The results from the created Moore Machine exactly matched those from the example.  Also, none of the self-checking assertions in the testbench raised alarm.  Also, each and every testcase was examine to ensure that it had a logical output that conqured with the state diagram given in the instructions. Therefore, the Moore Machine must have been built right.  
 
 
 #**Mealy Machine**
@@ -48,7 +48,7 @@ The code deciding the present floor state in the Moore machine was copied and us
 Since a Mealy Machine uses its inputs directly to influence the outputs, this was done in this program.  The inputs were used, using logic, to define the nextfloor logic of the elevator.  This was then used as an output to the module.  The code for this module can be seen here: https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/MooreElevatorController_Shell.vhd
 
 
-Once this logic was made, it became necessary to test it.  No example was given to compare to.  However, since the nextFloor logic was supposed to predict the next state the elevator would move to, given the present state and the inputs, the deisred outcomes were easy to analyze and figure out.  Thus, another self-checking testbench was created.  All of the outputs seemed logical.  A visual represenation of these outputs can be seen below:  
+Once this logic was made, it became necessary to test it.  No example was given to compare to.  However, since the nextFloor logic was supposed to predict the next state the elevator would move to, given the present state and the inputs, the deisred outcomes were easy to analyze and figure out.  Thus, another self-checking testbench was created.  All of the outputs seemed logical.  Each and every testcase was examine to ensure that it had a logical output that conqured with the state diagram given in the instructions.  A visual represenation of these outputs can be seen below:  
 
 ![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/Mealy_Testbench_Terragnoli_screenshot1.PNG "Mealy Simulation Results")
 
