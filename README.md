@@ -64,7 +64,11 @@ Is reset synchronous or asynchronous?
 It is synchronous because the logic involving the reset only occurs on the rising edge of a clock, thus ensuring that it is in sync with the clock.  
 
 Was the code for the next state of the Moore Machine the same for that of the Mealy machine?  
-Yes, the same code was used.  However, when predicting the nextfloor of the system, other logic was used.  
+Yes, the same code was used.  However, when predicting the nextfloor of the system, other logic was used. 
+
+What is the clock frequency when the period is 10ns?  The frequency is 100MHz
+
+If a 50MHz frequency was required, then a 20ns clock period would be required.  
 
 #**Important Notes**
 When designing the logic for this computer exercise, extra caution was used to ensure that no cases were left unspecified.  This way no decisions were left up to the computer/complier, which might decide to create latches or memory where there should not be any, which would create problems in the implementation and the future of the program.  
