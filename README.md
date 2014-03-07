@@ -83,5 +83,5 @@ For some reason most of the self-checking testbenches were not returning true.  
 
 
 #**Documentation**
-C3C Hunter Her Helped me understand that the nextFloor logic was simply predicting what the next floor would be for the elevator given the current state and conditions.  He said that he aquired this information from Dr. Neebel.  
+C3C Hunter Her Helped me understand that the nextFloor logic was simply predicting what the next floor would be for the elevator given the current state and conditions.  He said that he aquired this information from Dr. Neebel.  I did not put any headers or add any comments in the shells aquired off of the website because the code is not mine.  
 
