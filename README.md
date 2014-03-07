@@ -4,9 +4,9 @@ ECE281_CE3
 
 #**Purpose**
 
-The purpose of this computer exercise was to construct, using VHDL, the logic for an elevator.  This elevator will be able to travel to 4 different floors. It uses a clock, has the inputs, don't move, move up or down, and also records the floor that it is currently on.  
+The purpose of this computer exercise was to construct, using VHDL, the logic for an elevator.  This elevator will be able to travel to 4 different floors. It uses a clock, has the inputs "stop", move up or down, and also records the floor that it is currently on.  
 
-This machine was created in two different ways.  One way used a Moore machine and the other used a Mealy machine.  Difference between a Moore and a Mealy machine is that the outputs in a Moore machine are determined only by the state of the system.  On the other hand, the outputs for mealy machines are dependent on the state of the system and the inputs of a system.   
+This machine was created in two different ways.  One way used a Moore Machine and the other used a Mealy Machine. The difference between a Moore and a Mealy machine is that the outputs in a Moore machine are determined only by the state of the system.  In a Mealy Machine, the output is dependent on the state of the system and the inputs of a system directly.  
 
 The process of their construction and their results can be seen below: 
 
