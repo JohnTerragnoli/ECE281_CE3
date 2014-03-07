@@ -24,7 +24,11 @@ The information from this diagram was used to code the behavior of the elevator 
 The code that defines the behavior of the elevator through the Moore model can be seen here: 
 https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/MooreElevatorController_Shell.vhd   
 
-Some important changes were made to the code aside from adding the behavior of the elevator on the third and fourth floors.  Insead of using an "and" statemnent in the logic to determin if the clock is a a rising edge, the code was simply changed to "RISING_EDGE(CLK)".  This wording is more precise and will prevent future confusion when other users try to add to this code. 
+Some important changes were made to the code aside from adding the behavior of the elevator on the third and fourth floors.  Insead of using an "and" statemnent in the logic to determin if the clock is a a rising edge, the code was simply changed to "RISING_EDGE(CLK)".  This wording is more precise and will prevent future confusion when other users try to add to this code. Also, at the bottom of the code, the output of the system was related to the state of the system.  This completed the Moore diagram.  
+
+#**Questions*
+Is reset synchronous or asynchronous? 
+It is synchronous because the logic involving the reset only occurs on the rising edge of a clock, thus ensuring that it is in sync with the clock.  
 
 
 
