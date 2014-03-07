@@ -50,6 +50,12 @@ Since a Mealy Machine uses its inputs directly to influence the outputs, this wa
 
 Once this logic was made, it became necessary to test it.  No example was given to compare to.  However, since the nextFloor logic was supposed to predict the next state the elevator would move to, given the present state and the inputs, the deisred outcomes were easy to analyze and figure out.  Thus, another self-checking testbench was created.  All of the outputs seemed logical.  A visual represenation of these outputs can be seen below:  
 
+![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/Mealy_Testbench_Terragnoli_screenshot1.PNG "Mealy Simulation Results")
+
+![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/Mealy_Testbench_Terragnoli_screenshot2.PNG "Mealy Simulation Results2")
+
+
+Something that was interesting about these results was that the output from the Moore machine would only change on a rising edge, which the nextfloor output would change whenever the conditions dictated by the states and its inputs allowed it to.  
 
 
 
@@ -59,6 +65,7 @@ It is synchronous because the logic involving the reset only occurs on the risin
 
 #**Important Notes**
 When designing the logic for this computer exercise, extra caution was used to ensure that no cases were left unspecified.  This way no decisions were left up to the computer/complier, which might decide to create latches or memory where there should not be any, which would create problems in the implementation and the future of the program.  
+For some reason most of the self-checking testbenches were not returning true.  I did notice, however, that the tests seemed to be reading the value from slightly prior to where whey were supposed to be checking.  I did check all of the results manually, however, and they seemed accurate.  
 
 
 
