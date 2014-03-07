@@ -6,7 +6,9 @@ ECE281_CE3
 
 The purpose of this computer exercise was to construct, using VHDL, the logic for an elevator.  This elevator will be able to travel to 4 different floors. It uses a clock, has the inputs, don't move, move up or down, and also records the floor that it is currently on.  
 
-This machine was created in two different ways.  One way used a Moore machine and the other used a Mealy machine.  The process of their construction and their results can be seen below: 
+This machine was created in two different ways.  One way used a Moore machine and the other used a Mealy machine.  Difference between a Moore and a Mealy machine is that the outputs in a Moore machine are determined only by the state of the system.  On the other hand, the outputs for mealy machines are dependent on the state of the system and the inputs of a system.   
+
+The process of their construction and their results can be seen below: 
 
 
 #**Moore Machine Construction**
@@ -17,4 +19,16 @@ This code was then altered to remove some of the lines that might produce errors
 
 
 The information from this diagram was used to code the behavior of the elevator when on the third and fourth floors given various inputs.  
+
+
+The code that defines the behavior of the elevator through the Moore model can be seen here: 
+
+
+
+
+
+
+
+#**Documentation**
+C3C Hunter Her Helped me understand that the nextFloor logic was simply predicting what the next floor would be for the elevator given the current state and conditions.  He said that he aquired this information from Dr. Neebel.  
 
