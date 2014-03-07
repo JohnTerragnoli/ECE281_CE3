@@ -26,7 +26,23 @@ https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/MooreElevatorController_
 
 Some important changes were made to the code aside from adding the behavior of the elevator on the third and fourth floors.  Insead of using an "and" statemnent in the logic to determin if the clock is a a rising edge, the code was simply changed to "RISING_EDGE(CLK)".  This wording is more precise and will prevent future confusion when other users try to add to this code. Also, at the bottom of the code, the output of the system was related to the state of the system.  This completed the Moore diagram.  
 
-#**Questions*
+
+After this code was written, it was necessary to test the code.  To do this, a testbench was created that would "bring the elevator up to the top from the bottom floor, stopping for a clock cycle at each floor, and then back down without any stops".  The testbench was created to be self-checking.  Any errors that occured in the Moore machine would be directly brought to the user's attention through the console.  The code for this testbench can be seen here: https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/Moore_testbench_Terragnoli.vhd
+
+
+This testbench was then implimented.  The results can be seen in the picture below: 
+![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/MooreTestbenchSnapchat.PNG "Results from Moore")
+
+The results were compared with the sample results give in the lab.  These sample results can be seen here: 
+![alt tag](https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/ExampleScreenShot.PNG "Sample Results")
+
+The results from the created Moore Machine exactly matched those from the example.  Also, none of the self-checking assertions in the testbench raised alarm.  The Moore Machine must have been built right.  
+
+
+
+
+
+#**Questions**
 Is reset synchronous or asynchronous? 
 It is synchronous because the logic involving the reset only occurs on the rising edge of a clock, thus ensuring that it is in sync with the clock.  
 
