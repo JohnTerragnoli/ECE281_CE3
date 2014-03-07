@@ -39,6 +39,17 @@ The results were compared with the sample results give in the lab.  These sample
 The results from the created Moore Machine exactly matched those from the example.  Also, none of the self-checking assertions in the testbench raised alarm.  The Moore Machine must have been built right.  
 
 
+#**Mealy Machine**
+Once the Moore Machine was perfected, the same program was made using a Mealy Machine.  To do this, a shell was use, simpilarily to the creation of the Moore machine, to start out the program.  This shell can be seen here: https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/Original%20MealyElevatorController_Shell.vhd  
+
+
+The code deciding the present floor state in the Moore machine was copied and used in the Mealy machine to also define the present floor state.  This was used to find the output of the module, or the present floor that the elevator was on.  
+
+Since a Mealy Machine uses its inputs directly to influence the outputs, this was done in this program.  The inputs were used, using logic, to define the nextfloor logic of the elevator.  This was then used as an output to the module.  The code for this module can be seen here: https://raw.github.com/JohnTerragnoli/ECE281_CE3/master/MooreElevatorController_Shell.vhd
+
+
+Once this logic was made, it became necessary to test it.  No example was given to compare to.  However, since the nextFloor logic was supposed to predict the next state the elevator would move to, given the present state and the inputs, the deisred outcomes were easy to analyze and figure out.  Thus, another self-checking testbench was created.  All of the outputs seemed logical.  A visual represenation of these outputs can be seen below:  
+
 
 
 
