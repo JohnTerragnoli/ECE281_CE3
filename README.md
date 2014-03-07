@@ -63,6 +63,9 @@ Something that was interesting about these results was that the output from the 
 Is reset synchronous or asynchronous? 
 It is synchronous because the logic involving the reset only occurs on the rising edge of a clock, thus ensuring that it is in sync with the clock.  
 
+Was the code for the next state of the Moore Machine the same for that of the Mealy machine?  
+Yes, the same code was used.  However, when predicting the nextfloor of the system, other logic was used.  
+
 #**Important Notes**
 When designing the logic for this computer exercise, extra caution was used to ensure that no cases were left unspecified.  This way no decisions were left up to the computer/complier, which might decide to create latches or memory where there should not be any, which would create problems in the implementation and the future of the program.  
 For some reason most of the self-checking testbenches were not returning true.  I did notice, however, that the tests seemed to be reading the value from slightly prior to where whey were supposed to be checking.  I did check all of the results manually, however, and they seemed accurate.  
